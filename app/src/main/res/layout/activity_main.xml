@@ -11,12 +11,13 @@
     <Button
         android:id="@+id/req_per"
         android:layout_width="wrap_content"
-        android:text="申请权限"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="申请权限" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal">
 
         <TextView
@@ -70,94 +71,101 @@
         <CheckBox
             android:id="@+id/cb_desktop_show"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:checked="true" />
 
     </LinearLayout>
 
-
-    <TextView
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="第三步：   " />
+        android:orientation="vertical"
+        android:visibility="gone">
 
 
-    <TextView
-        android:id="@+id/tv_open_show_float_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="30dp"
-        android:background="#FF63B4E6"
-        android:gravity="center"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="打开一个展示浮窗的Activity"
-        android:textColor="#fff" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="第三步：   " />
 
 
-    <TextView
-        android:id="@+id/tv_open_hint_float_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="30dp"
-        android:background="#FF63B4E6"
-        android:gravity="center"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="打开一个不显示浮窗，但是返回后依然展示的页面"
-        android:textColor="#fff" />
+        <TextView
+            android:id="@+id/tv_open_show_float_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#FF63B4E6"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="打开一个展示浮窗的Activity"
+            android:textColor="#fff" />
 
 
-    <TextView
-        android:id="@+id/tv_close_activity"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="30dp"
-        android:background="#FF63B4E6"
-        android:gravity="center"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="打开一个彻底关闭浮窗的页面"
-        android:textColor="#fff" />
+        <TextView
+            android:id="@+id/tv_open_hint_float_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#FF63B4E6"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="打开一个不显示浮窗，但是返回后依然展示的页面"
+            android:textColor="#fff" />
 
 
-    <TextView
-        android:id="@+id/tv_start_test"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="30dp"
-        android:background="#FF63B4E6"
-        android:gravity="center"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="打开一个测试页面"
-        android:textColor="#fff" />
+        <TextView
+            android:id="@+id/tv_close_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#FF63B4E6"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="打开一个彻底关闭浮窗的页面"
+            android:textColor="#fff" />
 
 
-    <TextView
-        android:id="@+id/tv_secondary_page_show_float"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="30dp"
-        android:background="#FF63B4E6"
-        android:gravity="center"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="在二级页面显示一个浮窗出来"
-        android:textColor="#fff" />
+        <TextView
+            android:id="@+id/tv_start_test"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#FF63B4E6"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="打开一个测试页面"
+            android:textColor="#fff" />
 
 
-    <TextView
-        android:id="@+id/tv_show_hint"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="30dp"
-        android:background="#FF63B4E6"
-        android:gravity="center"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="测试浮窗主动的隐藏和显示(打开前先确保只有一个浮窗)"
-        android:textColor="#fff" />
+        <TextView
+            android:id="@+id/tv_secondary_page_show_float"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#FF63B4E6"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="在二级页面显示一个浮窗出来"
+            android:textColor="#fff" />
 
 
+        <TextView
+            android:id="@+id/tv_show_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#FF63B4E6"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="测试浮窗主动的隐藏和显示"
+            android:textColor="#fff" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </LinearLayout>
